@@ -14,10 +14,10 @@
 		5CE5AA3A23FAFB3F003FF678 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5AA3923FAFB3F003FF678 /* main.m */; };
 		5CE5AA4223FAFD6E003FF678 /* MoviesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5AA4123FAFD6E003FF678 /* MoviesTableViewController.m */; };
 		5CE5AA4523FAFE56003FF678 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5AA4423FAFE56003FF678 /* MovieCell.m */; };
-		5CE5AA4823FB00B5003FF678 /* MoviesJsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5AA4623FB00B5003FF678 /* MoviesJsonData.m */; };
 		5CE5AA4B23FB010E003FF678 /* MovieItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5AA4A23FB010E003FF678 /* MovieItem.m */; };
 		5CE5AA4E23FB0302003FF678 /* MovieLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5AA4D23FB0302003FF678 /* MovieLoader.m */; };
 		5CE5AA5123FB084C003FF678 /* MoviesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5AA5023FB084C003FF678 /* MoviesModel.m */; };
+		5CE5AA5723FDDA14003FF678 /* MoviesJsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5AA5623FDDA14003FF678 /* MoviesJsonData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +33,14 @@
 		5CE5AA4123FAFD6E003FF678 /* MoviesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesTableViewController.m; sourceTree = "<group>"; };
 		5CE5AA4323FAFE56003FF678 /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
 		5CE5AA4423FAFE56003FF678 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
-		5CE5AA4623FB00B5003FF678 /* MoviesJsonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoviesJsonData.m; path = ../../../../3/MoviesJsonData.m; sourceTree = "<group>"; };
-		5CE5AA4723FB00B5003FF678 /* MoviesJsonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoviesJsonData.h; path = ../../../../3/MoviesJsonData.h; sourceTree = "<group>"; };
 		5CE5AA4923FB010E003FF678 /* MovieItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieItem.h; sourceTree = "<group>"; };
 		5CE5AA4A23FB010E003FF678 /* MovieItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieItem.m; sourceTree = "<group>"; };
 		5CE5AA4C23FB0302003FF678 /* MovieLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieLoader.h; sourceTree = "<group>"; };
 		5CE5AA4D23FB0302003FF678 /* MovieLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieLoader.m; sourceTree = "<group>"; };
 		5CE5AA4F23FB084C003FF678 /* MoviesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesModel.h; sourceTree = "<group>"; };
 		5CE5AA5023FB084C003FF678 /* MoviesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesModel.m; sourceTree = "<group>"; };
+		5CE5AA5523FDDA14003FF678 /* MoviesJsonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesJsonData.h; sourceTree = "<group>"; };
+		5CE5AA5623FDDA14003FF678 /* MoviesJsonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesJsonData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,8 @@
 				5CE5AA4423FAFE56003FF678 /* MovieCell.m */,
 				5CE5AA4C23FB0302003FF678 /* MovieLoader.h */,
 				5CE5AA4D23FB0302003FF678 /* MovieLoader.m */,
-				5CE5AA4723FB00B5003FF678 /* MoviesJsonData.h */,
-				5CE5AA4623FB00B5003FF678 /* MoviesJsonData.m */,
+				5CE5AA5523FDDA14003FF678 /* MoviesJsonData.h */,
+				5CE5AA5623FDDA14003FF678 /* MoviesJsonData.m */,
 				5CE5AA3023FAFB3D003FF678 /* Main.storyboard */,
 				5CE5AA3323FAFB3F003FF678 /* Assets.xcassets */,
 				5CE5AA3523FAFB3F003FF678 /* LaunchScreen.storyboard */,
@@ -168,11 +168,11 @@
 			files = (
 				5CE5AA3A23FAFB3F003FF678 /* main.m in Sources */,
 				5CE5AA4E23FB0302003FF678 /* MovieLoader.m in Sources */,
+				5CE5AA5723FDDA14003FF678 /* MoviesJsonData.m in Sources */,
 				5CE5AA4223FAFD6E003FF678 /* MoviesTableViewController.m in Sources */,
 				5CE5AA4523FAFE56003FF678 /* MovieCell.m in Sources */,
 				5CE5AA5123FB084C003FF678 /* MoviesModel.m in Sources */,
 				5CE5AA2C23FAFB3D003FF678 /* AppDelegate.m in Sources */,
-				5CE5AA4823FB00B5003FF678 /* MoviesJsonData.m in Sources */,
 				5CE5AA4B23FB010E003FF678 /* MovieItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
