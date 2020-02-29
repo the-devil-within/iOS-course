@@ -24,6 +24,12 @@ static NSString *const kImageName = @"imageName";
 
 @implementation MovieLoader
 
+- (void)loadMoviesWithCompletion:(MoviesBlock)completion {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        completion([self loadMovies]);
+    });
+}
+
 - (NSArray <MovieItem *> *)loadMovies {
     NSArray *movies = [[NSArray alloc] init];
     NSError *error = nil;

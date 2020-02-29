@@ -17,6 +17,14 @@
 
 @implementation MoviesModel
 
+- (void)loadMoviesWithCompletion:(VoidBlock)completion {
+    __weak MoviesModel *weakSelf = self;
+    [self.loader loadMoviesWithCompletion:^(NSArray<MovieItem *> *movies) {
+        weakSelf.movies = movies;
+        completion();
+    }];
+}
+
 - (MovieItem *)movieAtIndex:(NSInteger)index {
     if (index > [self moviesCount]) {
         return nil;
@@ -33,13 +41,6 @@
         _loader = [[MovieLoader alloc] init];
     }
     return _loader;
-}
-
-- (NSArray<MovieItem *> *)movies {
-    if (!_movies) {
-        _movies = [self.loader loadMovies];
-    }
-    return _movies;
 }
 
 @end

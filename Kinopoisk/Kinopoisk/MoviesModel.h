@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^VoidBlock) (void);
 @class MovieItem;
 
 @interface MoviesModel : NSObject
+
+- (void)loadMoviesWithCompletion:(VoidBlock)completion;
 
 - (MovieItem *)movieAtIndex:(NSInteger)index;
 - (NSUInteger)moviesCount;

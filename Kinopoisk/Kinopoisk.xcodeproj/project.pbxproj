@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CE14F2A240830A800257936 /* DetailedMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE14F29240830A800257936 /* DetailedMovieCell.m */; };
+		5CE14F2D2408342200257936 /* MovieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE14F2C2408342200257936 /* MovieTableViewController.m */; };
 		5CE5AA2C23FAFB3D003FF678 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5AA2B23FAFB3D003FF678 /* AppDelegate.m */; };
 		5CE5AA3223FAFB3D003FF678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE5AA3023FAFB3D003FF678 /* Main.storyboard */; };
 		5CE5AA3423FAFB3F003FF678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE5AA3323FAFB3F003FF678 /* Assets.xcassets */; };
@@ -21,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CE14F28240830A800257936 /* DetailedMovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailedMovieCell.h; sourceTree = "<group>"; };
+		5CE14F29240830A800257936 /* DetailedMovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailedMovieCell.m; sourceTree = "<group>"; };
+		5CE14F2B2408342200257936 /* MovieTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieTableViewController.h; sourceTree = "<group>"; };
+		5CE14F2C2408342200257936 /* MovieTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewController.m; sourceTree = "<group>"; };
 		5CE5AA2723FAFB3D003FF678 /* Kinopoisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kinopoisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE5AA2A23FAFB3D003FF678 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CE5AA2B23FAFB3D003FF678 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +83,8 @@
 				5CE5AA2B23FAFB3D003FF678 /* AppDelegate.m */,
 				5CE5AA4023FAFD6E003FF678 /* MoviesTableViewController.h */,
 				5CE5AA4123FAFD6E003FF678 /* MoviesTableViewController.m */,
+				5CE14F2B2408342200257936 /* MovieTableViewController.h */,
+				5CE14F2C2408342200257936 /* MovieTableViewController.m */,
 				5CE5AA4F23FB084C003FF678 /* MoviesModel.h */,
 				5CE5AA5023FB084C003FF678 /* MoviesModel.m */,
 				5CE5AA4923FB010E003FF678 /* MovieItem.h */,
@@ -88,6 +96,8 @@
 				5CE5AA5523FDDA14003FF678 /* MoviesJsonData.h */,
 				5CE5AA5623FDDA14003FF678 /* MoviesJsonData.m */,
 				5CE5AA3023FAFB3D003FF678 /* Main.storyboard */,
+				5CE14F28240830A800257936 /* DetailedMovieCell.h */,
+				5CE14F29240830A800257936 /* DetailedMovieCell.m */,
 				5CE5AA3323FAFB3F003FF678 /* Assets.xcassets */,
 				5CE5AA3523FAFB3F003FF678 /* LaunchScreen.storyboard */,
 				5CE5AA3823FAFB3F003FF678 /* Info.plist */,
@@ -168,10 +178,12 @@
 			files = (
 				5CE5AA3A23FAFB3F003FF678 /* main.m in Sources */,
 				5CE5AA4E23FB0302003FF678 /* MovieLoader.m in Sources */,
+				5CE14F2D2408342200257936 /* MovieTableViewController.m in Sources */,
 				5CE5AA5723FDDA14003FF678 /* MoviesJsonData.m in Sources */,
 				5CE5AA4223FAFD6E003FF678 /* MoviesTableViewController.m in Sources */,
 				5CE5AA4523FAFE56003FF678 /* MovieCell.m in Sources */,
 				5CE5AA5123FB084C003FF678 /* MoviesModel.m in Sources */,
+				5CE14F2A240830A800257936 /* DetailedMovieCell.m in Sources */,
 				5CE5AA2C23FAFB3D003FF678 /* AppDelegate.m in Sources */,
 				5CE5AA4B23FB010E003FF678 /* MovieItem.m in Sources */,
 			);

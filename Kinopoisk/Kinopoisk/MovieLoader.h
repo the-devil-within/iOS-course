@@ -9,9 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @class MovieItem;
+typedef void (^MoviesBlock)(NSArray <MovieItem *> *);
 
 @interface MovieLoader : NSObject
-
-- (NSArray <MovieItem *> *)loadMovies;
-
+- (void)loadMoviesWithCompletion:(MoviesBlock)completion;
 @end
