@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C767BB72429258200A317CB /* FaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C767BB62429258200A317CB /* FaceModel.m */; };
+		5C767BBA242926A300A317CB /* EmotionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C767BB9242926A300A317CB /* EmotionsViewController.m */; };
 		5CE14F4124097DE000257936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE14F4024097DE000257936 /* AppDelegate.m */; };
-		5CE14F4424097DE000257936 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE14F4324097DE000257936 /* ViewController.m */; };
+		5CE14F4424097DE000257936 /* FaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE14F4324097DE000257936 /* FaceViewController.m */; };
 		5CE14F4724097DE000257936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE14F4524097DE000257936 /* Main.storyboard */; };
 		5CE14F4924097DE200257936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE14F4824097DE200257936 /* Assets.xcassets */; };
 		5CE14F4C24097DE200257936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE14F4A24097DE200257936 /* LaunchScreen.storyboard */; };
@@ -17,11 +19,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C767BB52429258200A317CB /* FaceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceModel.h; sourceTree = "<group>"; };
+		5C767BB62429258200A317CB /* FaceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceModel.m; sourceTree = "<group>"; };
+		5C767BB8242926A300A317CB /* EmotionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmotionsViewController.h; sourceTree = "<group>"; };
+		5C767BB9242926A300A317CB /* EmotionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmotionsViewController.m; sourceTree = "<group>"; };
 		5CE14F3C24097DE000257936 /* FaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE14F3F24097DE000257936 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CE14F4024097DE000257936 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5CE14F4224097DE000257936 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5CE14F4324097DE000257936 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5CE14F4224097DE000257936 /* FaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceViewController.h; sourceTree = "<group>"; };
+		5CE14F4324097DE000257936 /* FaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceViewController.m; sourceTree = "<group>"; };
 		5CE14F4624097DE000257936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CE14F4824097DE200257936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CE14F4B24097DE200257936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,8 +69,12 @@
 			children = (
 				5CE14F3F24097DE000257936 /* AppDelegate.h */,
 				5CE14F4024097DE000257936 /* AppDelegate.m */,
-				5CE14F4224097DE000257936 /* ViewController.h */,
-				5CE14F4324097DE000257936 /* ViewController.m */,
+				5CE14F4224097DE000257936 /* FaceViewController.h */,
+				5CE14F4324097DE000257936 /* FaceViewController.m */,
+				5C767BB52429258200A317CB /* FaceModel.h */,
+				5C767BB62429258200A317CB /* FaceModel.m */,
+				5C767BB8242926A300A317CB /* EmotionsViewController.h */,
+				5C767BB9242926A300A317CB /* EmotionsViewController.m */,
 				5CE14F4524097DE000257936 /* Main.storyboard */,
 				5CE14F5524097F9400257936 /* FaceView.h */,
 				5CE14F5624097F9400257936 /* FaceView.m */,
@@ -146,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE14F4424097DE000257936 /* ViewController.m in Sources */,
+				5CE14F4424097DE000257936 /* FaceViewController.m in Sources */,
 				5CE14F4F24097DE200257936 /* main.m in Sources */,
+				5C767BBA242926A300A317CB /* EmotionsViewController.m in Sources */,
+				5C767BB72429258200A317CB /* FaceModel.m in Sources */,
 				5CE14F4124097DE000257936 /* AppDelegate.m in Sources */,
 				5CE14F5724097F9400257936 /* FaceView.m in Sources */,
 			);

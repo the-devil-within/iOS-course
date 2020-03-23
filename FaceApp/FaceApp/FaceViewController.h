@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class FaceModel;
 
-@interface ViewController : UIViewController
+@interface FaceViewController : UIViewController
 
+@property (nonatomic, strong) FaceModel *model;
 
 @end
 

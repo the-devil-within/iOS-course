@@ -6,14 +6,43 @@
 //  Copyright © 2020 Evgeny Blinov. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FaceViewController.h"
 #import "FaceView.h"
+#import "FaceModel.h"
 
-@interface ViewController ()
+
+@interface FaceViewController ()
 @property (weak, nonatomic) IBOutlet FaceView *faceView;
+@property (copy, nonatomic) NSDictionary *mapping;
 @end
 
-@implementation ViewController
+@implementation FaceViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self updateUI];
+}
+
+- (NSDictionary *)mapping {
+    if (_mapping == nil) {
+        _mapping = @{ @(MouthStateNeutral) : @0,
+                      @(MouthStateFrown) : @(-1),
+                      @(MouthStateSmile) : @1
+        };
+    }
+    return _mapping;
+}
+
+- (void)setModel:(FaceModel *)model {
+    _model = model;
+    [self updateUI];
+}
+
+- (void)updateUI {
+    self.faceView.eyesOpen = self.model.eyesOpen;
+    NSNumber *mouthLevel = @(self.model.mouthState);
+    self.faceView.mouthLevel = [self.mapping[mouthLevel] floatValue];
+}
 
 - (void)setFaceView:(FaceView *)faceView {
     _faceView = faceView;
