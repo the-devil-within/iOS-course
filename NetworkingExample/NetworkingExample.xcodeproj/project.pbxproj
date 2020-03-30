@@ -17,6 +17,7 @@
 		5C7359C9243215380052D4D0 /* DownloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7359C8243215380052D4D0 /* DownloadService.m */; };
 		5CF2975B2432019A005654FC /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2975A2432019A005654FC /* Track.m */; };
 		5CF29763243203EF005654FC /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF29762243203EF005654FC /* SearchViewController.m */; };
+		5CF2976624322B82005654FC /* Download.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2976524322B82005654FC /* Download.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		5CF2975A2432019A005654FC /* Track.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 		5CF29761243203EF005654FC /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		5CF29762243203EF005654FC /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		5CF2976424322B82005654FC /* Download.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Download.h; sourceTree = "<group>"; };
+		5CF2976524322B82005654FC /* Download.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Download.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				5CF297592432019A005654FC /* Track.h */,
 				5CF2975A2432019A005654FC /* Track.m */,
 				5C7359C2243207140052D4D0 /* TrackCellDelegate.h */,
+				5CF2976424322B82005654FC /* Download.h */,
+				5CF2976524322B82005654FC /* Download.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				5C7359C6243215290052D4D0 /* QueryService.m in Sources */,
 				5CF29763243203EF005654FC /* SearchViewController.m in Sources */,
 				5C7359C9243215380052D4D0 /* DownloadService.m in Sources */,
+				5CF2976624322B82005654FC /* Download.m in Sources */,
 				5C7359C1243205750052D4D0 /* TrackCell.m in Sources */,
 				5C38686B2431EEF800345050 /* AppDelegate.m in Sources */,
 			);

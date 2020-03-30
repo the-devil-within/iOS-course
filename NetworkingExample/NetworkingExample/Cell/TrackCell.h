@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @protocol TrackCellDelegate;
-@class Track;
+@class Track, Download;
 
 @interface TrackCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel *artistLabel;
@@ -20,7 +20,9 @@
 @property (nonatomic, weak) IBOutlet UIProgressView *progressView;
 
 @property (nonatomic, weak) id<TrackCellDelegate> delegate;
-- (void)configureWithTrack:(Track *)track downloaded:(BOOL)isDownloaded;
+
+- (void)configureWithTrack:(Track *)track downloaded:(BOOL)isDownloaded download:(Download *)download;
+- (void)updateDisplayProgress:(CGFloat)progress totalSize:(NSString *)totalSize;
 @end
 
 

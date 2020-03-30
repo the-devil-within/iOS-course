@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^VoidBlock) (void);
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, copy) VoidBlock backgroundSessionCompletionHandler;
 
 
 @end

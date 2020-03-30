@@ -10,7 +10,7 @@
 
 @class Track;
 
-typedef void (^QueryResult) (NSArray <Track *> *, NSString *);
+typedef void (^QueryResult) (NSArray <Track *> *, NSString *error);
 
 @interface QueryService : NSObject
 - (void)getSearchResultsWithQuery:(NSString *)query completion:(QueryResult)completion;

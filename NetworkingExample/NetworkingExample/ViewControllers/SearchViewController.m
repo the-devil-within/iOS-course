@@ -13,20 +13,24 @@
 #import "DownloadService.h"
 #import "QueryService.h"
 #import <AVKit/AVKit.h>
+#import "AppDelegate.h"
+#import "Download.h"
 
-@interface SearchViewController () <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, TrackCellDelegate>
+@interface SearchViewController () <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, TrackCellDelegate, NSURLSessionDelegate, NSURLSessionDownloadDelegate>
 @property (nonatomic, strong) NSArray <Track *> *searchResults;
 @property (nonatomic, strong) UITapGestureRecognizer *tapRecognizer;
-@property (nonatomic, strong) NSURL *documentsPath;
+@property (nonatomic, strong) NSURL *documentsPath;  // Get local file path: download task stores tune here; AV player plays it.
 
 @property (nonatomic, strong) DownloadService *downloadService;
 @property (nonatomic, strong) QueryService *queryService;
+@property (nonatomic, strong) NSURLSession *downloadsSession;
 @end
 
 @implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.downloadService.downloadsSession = self.downloadsSession;
     self.tableView.tableFooterView = [UIView new];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -72,6 +76,28 @@
     [self.searchBar resignFirstResponder];
 }
 
+- (DownloadService *)downloadService {
+    if (!_downloadService){
+        _downloadService = [DownloadService new];
+    }
+    return _downloadService;
+}
+
+- (QueryService *)queryService {
+    if (!_queryService) {
+        _queryService = [QueryService new];
+    }
+    return _queryService;
+}
+
+-(NSURLSession *)downloadsSession {
+    if(!_downloadsSession) {
+        NSURLSessionConfiguration *config = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"com.thedemonswithin.networkingExample.bgSession"];
+        _downloadsSession = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:nil];
+    }
+    return _downloadsSession;
+}
+
 #pragma mark - Search Bar Delegate
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
@@ -110,7 +136,7 @@
     
     cell.delegate = self;
     Track *track = self.searchResults[indexPath.row];
-    [cell configureWithTrack:track downloaded:track.downloaded];
+    [cell configureWithTrack:track downloaded:track.downloaded download:self.downloadService.activeDownloads[track.previewURL]];
     return cell;
 }
 
@@ -166,6 +192,50 @@
     Track *track = self.searchResults[indexPath.row];
     [self.downloadService resumeDownload:track];
     [self reload:indexPath.row];
+}
+
+#pragma mark - NSURLSessionDelegate
+- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)session {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        AppDelegate *appDelegate = (AppDelegate *)UIApplication.sharedApplication.delegate;
+        VoidBlock completionHandler = appDelegate.backgroundSessionCompletionHandler;
+        appDelegate.backgroundSessionCompletionHandler = nil;
+        completionHandler();
+    });
+}
+
+#pragma mark - URLSessionDownloadDelegate
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location {
+    NSURL *sourceURL = downloadTask.originalRequest.URL;
+    if (!sourceURL) { return; }
+    
+    Download *download = self.downloadService.activeDownloads[sourceURL];
+    self.downloadService.activeDownloads[sourceURL] = nil;
+    
+    NSURL *destinationUrl = [self localFilePathForUrl:sourceURL];
+    NSFileManager *fm = NSFileManager.defaultManager;
+    [fm removeItemAtURL:destinationUrl error:nil];
+    [fm copyItemAtURL:location toURL:destinationUrl error:nil];
+    download.track.downloaded = YES;
+    
+    int index = download.track.index;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self reload:index];
+    });
+}
+
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
+    NSURL *url = downloadTask.originalRequest.URL;
+    if (!url) { return; }
+    Download *download = self.downloadService.activeDownloads[url];
+    download.progress = (CGFloat)totalBytesWritten / (CGFloat)totalBytesExpectedToWrite;
+    
+    
+    NSString *totalSize = [NSByteCountFormatter stringFromByteCount:totalBytesExpectedToWrite countStyle:NSByteCountFormatterCountStyleFile];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        TrackCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:download.track.index inSection:0]];
+        [cell updateDisplayProgress:download.progress totalSize:totalSize];
+    });
 }
 
 @end

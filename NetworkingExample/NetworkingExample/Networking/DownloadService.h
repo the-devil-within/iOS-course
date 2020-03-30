@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Track;
+@class Track, Download;
 @interface DownloadService : NSObject
+@property (nonatomic, strong) NSURLSession *downloadsSession;
+@property (nonatomic, strong) NSMutableDictionary <NSURL *, Download *> *activeDownloads;
+
 - (void)cancelDownload:(Track *)track;
 - (void)pauseDownload:(Track *)track;
 - (void)resumeDownload:(Track *)track;
