@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CC42F4D2438A20C00453822 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F4C2438A20C00453822 /* AppDelegate.m */; };
+		5CC42F502438A20C00453822 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F4F2438A20C00453822 /* SceneDelegate.m */; };
+		5CC42F562438A20C00453822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC42F542438A20C00453822 /* Main.storyboard */; };
+		5CC42F592438A20C00453822 /* PhoneBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F572438A20C00453822 /* PhoneBook.xcdatamodeld */; };
+		5CC42F5B2438A20C00453822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC42F5A2438A20C00453822 /* Assets.xcassets */; };
+		5CC42F5E2438A20C00453822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC42F5C2438A20C00453822 /* LaunchScreen.storyboard */; };
+		5CC42F612438A20C00453822 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F602438A20C00453822 /* main.m */; };
+		5CC42F692438AA7900453822 /* AddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F682438AA7900453822 /* AddPersonViewController.m */; };
+		5CC42F6C2438AEA500453822 /* GenderPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F6B2438AEA500453822 /* GenderPicker.m */; };
+		5CC42F702438B3C600453822 /* PersonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F6F2438B3C600453822 /* PersonItem.m */; };
+		5CC42F782438B76B00453822 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F762438B76B00453822 /* Person.m */; };
+		5CC42F7C2438BA0400453822 /* PersonManagedObject+Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F7B2438BA0400453822 /* PersonManagedObject+Insert.m */; };
+		5CC42F802438BFCB00453822 /* DBDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F7F2438BFCB00453822 /* DBDataProvider.m */; };
+		5CC42F832438D17E00453822 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC42F822438D17E00453822 /* ContactsTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5CC42F482438A20C00453822 /* PhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC42F4B2438A20C00453822 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CC42F4C2438A20C00453822 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5CC42F4E2438A20C00453822 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		5CC42F4F2438A20C00453822 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		5CC42F552438A20C00453822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CC42F582438A20C00453822 /* PhoneBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhoneBook.xcdatamodel; sourceTree = "<group>"; };
+		5CC42F5A2438A20C00453822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CC42F5D2438A20C00453822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CC42F5F2438A20C00453822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CC42F602438A20C00453822 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CC42F672438AA7900453822 /* AddPersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPersonViewController.h; sourceTree = "<group>"; };
+		5CC42F682438AA7900453822 /* AddPersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPersonViewController.m; sourceTree = "<group>"; };
+		5CC42F6A2438AEA500453822 /* GenderPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenderPicker.h; sourceTree = "<group>"; };
+		5CC42F6B2438AEA500453822 /* GenderPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenderPicker.m; sourceTree = "<group>"; };
+		5CC42F6E2438B3C600453822 /* PersonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonItem.h; sourceTree = "<group>"; };
+		5CC42F6F2438B3C600453822 /* PersonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonItem.m; sourceTree = "<group>"; };
+		5CC42F752438B76B00453822 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		5CC42F762438B76B00453822 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5CC42F7A2438BA0400453822 /* PersonManagedObject+Insert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonManagedObject+Insert.h"; sourceTree = "<group>"; };
+		5CC42F7B2438BA0400453822 /* PersonManagedObject+Insert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonManagedObject+Insert.m"; sourceTree = "<group>"; };
+		5CC42F7D2438BC5000453822 /* PersonProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonProtocols.h; sourceTree = "<group>"; };
+		5CC42F7E2438BFCB00453822 /* DBDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDataProvider.h; sourceTree = "<group>"; };
+		5CC42F7F2438BFCB00453822 /* DBDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDataProvider.m; sourceTree = "<group>"; };
+		5CC42F812438D17E00453822 /* ContactsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		5CC42F822438D17E00453822 /* ContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CC42F452438A20C00453822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CC42F3F2438A20C00453822 = {
+			isa = PBXGroup;
+			children = (
+				5CC42F6D2438B3B400453822 /* DataModel */,
+				5CC42F4A2438A20C00453822 /* PhoneBook */,
+				5CC42F492438A20C00453822 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CC42F492438A20C00453822 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CC42F482438A20C00453822 /* PhoneBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CC42F4A2438A20C00453822 /* PhoneBook */ = {
+			isa = PBXGroup;
+			children = (
+				5CC42F7D2438BC5000453822 /* PersonProtocols.h */,
+				5CC42F7E2438BFCB00453822 /* DBDataProvider.h */,
+				5CC42F7F2438BFCB00453822 /* DBDataProvider.m */,
+				5CC42F4B2438A20C00453822 /* AppDelegate.h */,
+				5CC42F4C2438A20C00453822 /* AppDelegate.m */,
+				5CC42F4E2438A20C00453822 /* SceneDelegate.h */,
+				5CC42F4F2438A20C00453822 /* SceneDelegate.m */,
+				5CC42F542438A20C00453822 /* Main.storyboard */,
+				5CC42F672438AA7900453822 /* AddPersonViewController.h */,
+				5CC42F682438AA7900453822 /* AddPersonViewController.m */,
+				5CC42F812438D17E00453822 /* ContactsTableViewController.h */,
+				5CC42F822438D17E00453822 /* ContactsTableViewController.m */,
+				5CC42F6A2438AEA500453822 /* GenderPicker.h */,
+				5CC42F6B2438AEA500453822 /* GenderPicker.m */,
+				5CC42F5A2438A20C00453822 /* Assets.xcassets */,
+				5CC42F5C2438A20C00453822 /* LaunchScreen.storyboard */,
+				5CC42F5F2438A20C00453822 /* Info.plist */,
+				5CC42F602438A20C00453822 /* main.m */,
+				5CC42F6E2438B3C600453822 /* PersonItem.h */,
+				5CC42F6F2438B3C600453822 /* PersonItem.m */,
+			);
+			path = PhoneBook;
+			sourceTree = "<group>";
+		};
+		5CC42F6D2438B3B400453822 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				5CC42F752438B76B00453822 /* Person.h */,
+				5CC42F762438B76B00453822 /* Person.m */,
+				5CC42F7A2438BA0400453822 /* PersonManagedObject+Insert.h */,
+				5CC42F7B2438BA0400453822 /* PersonManagedObject+Insert.m */,
+				5CC42F572438A20C00453822 /* PhoneBook.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CC42F472438A20C00453822 /* PhoneBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CC42F642438A20C00453822 /* Build configuration list for PBXNativeTarget "PhoneBook" */;
+			buildPhases = (
+				5CC42F442438A20C00453822 /* Sources */,
+				5CC42F452438A20C00453822 /* Frameworks */,
+				5CC42F462438A20C00453822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneBook;
+			productName = PhoneBook;
+			productReference = 5CC42F482438A20C00453822 /* PhoneBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CC42F402438A20C00453822 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Evgeny Blinov";
+				TargetAttributes = {
+					5CC42F472438A20C00453822 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5CC42F432438A20C00453822 /* Build configuration list for PBXProject "PhoneBook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CC42F3F2438A20C00453822;
+			productRefGroup = 5CC42F492438A20C00453822 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CC42F472438A20C00453822 /* PhoneBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CC42F462438A20C00453822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC42F5E2438A20C00453822 /* LaunchScreen.storyboard in Resources */,
+				5CC42F5B2438A20C00453822 /* Assets.xcassets in Resources */,
+				5CC42F562438A20C00453822 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CC42F442438A20C00453822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC42F7C2438BA0400453822 /* PersonManagedObject+Insert.m in Sources */,
+				5CC42F612438A20C00453822 /* main.m in Sources */,
+				5CC42F4D2438A20C00453822 /* AppDelegate.m in Sources */,
+				5CC42F832438D17E00453822 /* ContactsTableViewController.m in Sources */,
+				5CC42F6C2438AEA500453822 /* GenderPicker.m in Sources */,
+				5CC42F502438A20C00453822 /* SceneDelegate.m in Sources */,
+				5CC42F782438B76B00453822 /* Person.m in Sources */,
+				5CC42F802438BFCB00453822 /* DBDataProvider.m in Sources */,
+				5CC42F702438B3C600453822 /* PersonItem.m in Sources */,
+				5CC42F592438A20C00453822 /* PhoneBook.xcdatamodeld in Sources */,
+				5CC42F692438AA7900453822 /* AddPersonViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5CC42F542438A20C00453822 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CC42F552438A20C00453822 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CC42F5C2438A20C00453822 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CC42F5D2438A20C00453822 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CC42F622438A20C00453822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5CC42F632438A20C00453822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CC42F652438A20C00453822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76X8TP584F;
+				INFOPLIST_FILE = PhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thedemonswithin.PhoneBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CC42F662438A20C00453822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76X8TP584F;
+				INFOPLIST_FILE = PhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thedemonswithin.PhoneBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CC42F432438A20C00453822 /* Build configuration list for PBXProject "PhoneBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC42F622438A20C00453822 /* Debug */,
+				5CC42F632438A20C00453822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CC42F642438A20C00453822 /* Build configuration list for PBXNativeTarget "PhoneBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC42F652438A20C00453822 /* Debug */,
+				5CC42F662438A20C00453822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CC42F572438A20C00453822 /* PhoneBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CC42F582438A20C00453822 /* PhoneBook.xcdatamodel */,
+			);
+			currentVersion = 5CC42F582438A20C00453822 /* PhoneBook.xcdatamodel */;
+			path = PhoneBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5CC42F402438A20C00453822 /* Project object */;
+}
